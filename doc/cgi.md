@@ -1,3 +1,5 @@
+# CGI 文档
+
 ##  /word/info/:word_id 获取单词信息
 
 ### 基本信息

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  db:
+    build: setup/db
+    ports:
+      - "8081:3306"
+    volumes:
+      - ./db-data:/var/lib/mysql

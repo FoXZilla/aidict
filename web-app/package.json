@@ -1,0 +1,36 @@
+{
+  "name": "aidict",
+  "version": "1.0.0",
+  "description": "（WIP）基于AI的可对话的超级英语字典~！",
+  "main": "src/app.js",
+  "directories": {
+    "doc": "../doc"
+  },
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoXZilla/aidict.git"
+  },
+  "author": "pea3nut",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/FoXZilla/aidict/issues"
+  },
+  "homepage": "https://github.com/FoXZilla/aidict#readme",
+  "dependencies": {
+    "@types/node": "^20.8.3",
+    "antd": "^5.9.4",
+    "mysql2": "^3.6.1",
+    "next": "^13.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}

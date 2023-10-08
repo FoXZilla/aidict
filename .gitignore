@@ -131,3 +131,7 @@ dist
 
 # project level
 draft
+
+# data
+web-app/db-data/
+

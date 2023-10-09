@@ -11,10 +11,23 @@ CREATE TABLE IF NOT EXISTS words (
 );
 
 -- 这个表有三个字段：`id`、`dependent_dialog_id_list` 和 `messages`。`id` 字段是对话的唯一标识符，`dependent_dialog_id_list` 字段是一个 JSON 字符串，表示这个对话依赖的其他对话的 ID 列表，`messages` 字段也是一个 JSON 字符串，表示这个对话的消息列表。
-
-CREATE TABLE dialogues (
+CREATE TABLE IF NOT EXISTS dialogues (
     id VARCHAR(36) NOT NULL,
     dependent_dialog_id_list TEXT NOT NULL,
     messages TEXT NOT NULL,
     PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS newest_dialogues (
+  id VARCHAR(36) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS newest_words (
+  id VARCHAR(36) NOT NULL,
+  original_word VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
 );
